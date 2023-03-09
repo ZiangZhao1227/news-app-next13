@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import Header from "./Header";
-import NavLinks from "./NavLinks";
 
 export default function RootLayout({
   children,
@@ -16,7 +15,6 @@ export default function RootLayout({
       <head />
       <body>
         <Header />
-        <NavLinks />
         <div> {children}</div>
       </body>
     </html>
