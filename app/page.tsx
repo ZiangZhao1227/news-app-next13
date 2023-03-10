@@ -1,6 +1,11 @@
+import { categories } from "../constants";
+import fetchNews from "../utils/fetchNews";
 
+async function Homepage() {
+  const news: NewsResponse = await fetchNews(categories.join(", "));
 
-function Homepage() {
+  console.log(news)
+
   return <div>Homepage</div>;
 }
 
