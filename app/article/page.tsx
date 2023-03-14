@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { useRouter } from "next/router";
 
 type Props = {
   searchParams?: Article;
