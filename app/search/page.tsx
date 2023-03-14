@@ -1,3 +1,4 @@
+import { categories } from "@/constants";
 import fetchNews from "../../utils/fetchNews";
 import NewsList from "../NewsList";
 
@@ -22,3 +23,9 @@ async function SearchPage({ searchParams }: Props) {
 }
 
 export default SearchPage;
+
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    categories: category,
+  }));
+}
