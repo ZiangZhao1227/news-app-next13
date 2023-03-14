@@ -44,7 +44,7 @@ const fetchNews = async (
     //  Fetch function with Next.js 13 caching
     const res = await fetch("https://strausberg.stepzen.net/api/intent-gorilla/__graphql", {
         method: "POST",
-        cache: isDymamic ? "no-cache" : "default",
+     //   cache: isDymamic ? "no-cache" : "default",
         next: isDymamic ? { revalidate: 0 } : { revalidate: 30 },
         headers: {
             "Content-Type": "application/json",
