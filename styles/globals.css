@@ -7,3 +7,7 @@
   underline-offset-8 rounded-full cursor-pointer p-4 hover:font-bold capitalize hover:scale-100 
   transition-transform duration-200 ease-out;
 }
+
+.header-title {
+  @apply text-4xl font-serif capitalize px-10 pt-5 underline decoration-blue-400 decoration-2 underline-offset-8 decoration-double;
+}
